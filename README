@@ -1,0 +1,12 @@
+subreap - become a reaper, then exec
+====================================
+
+Usage
+-----
+
+	subreap prog...
+
+Caveats
+-------
+
+Probably only works on FreeBS0 10.2+.
