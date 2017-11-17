@@ -7,7 +7,7 @@
 
 int main(int const argc, char **argv) {
 	if (argc < 2)
-		errx(2, "not enough arguments");
+		errx(2, "usage: %s prog...", *argv);
 
 	if (procctl(P_PID, getpid(), PROC_REAP_ACQUIRE, NULL) == -1) {
 		if (errno != EBUSY)
